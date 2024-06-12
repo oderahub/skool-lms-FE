@@ -1,4 +1,4 @@
--Project has been setup
+The project has been set 
 -Typescript
 -Vite
 -Tailwind
