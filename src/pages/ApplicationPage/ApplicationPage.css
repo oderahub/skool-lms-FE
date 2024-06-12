@@ -1,0 +1,61 @@
+@media (max-width: 1050px) {
+  .flex.flex-wrap {
+    flex-direction: column;
+    align-items: center;  
+    margin-bottom: -20px;   
+  }
+
+  .application-container {
+    width: 350px; /* Set your desired fixed width here */
+    margin-bottom: 20px; /* Add some space between the cards */
+  }
+
+  .submit-application-button {
+    min-width: 154px;
+    margin-left :auto;
+    margin-right :auto;
+  }
+}
+
+@media (min-width: 1051px) {  
+  .flex.flex-wrap > * + * {
+    margin-left: 20px; /* Add some space between the cards */
+  }
+}
+
+.shadow-card {
+  box-shadow: 0px 13px 29px 0px #CCCCCC1A,
+              0px 53px 53px 0px #CCCCCC17,
+              0px 120px 72px 0px #CCCCCC0D,
+              0px 213px 85px 0px #CCCCCC03,
+              0px 333px 93px 0px #CCCCCC00;
+}
+
+@media (max-width: 1170px) {
+  
+  .application-container {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .application-container button {
+    font-size: 0.7rem; /* Adjust font size for smaller screens */
+    padding: 6px 12px; /* Adjust padding for smaller screens */
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050; /* High z-index to ensure it sits above other content */
+}
+
+.blur-md {
+  filter: blur(8px); /* Increase the px value as needed */
+}
